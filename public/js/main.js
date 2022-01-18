@@ -11,7 +11,7 @@ const { username, room } = Qs.parse(location.search, {
 });
 
 // change title of page
-document.title = `MarkCord | ${room}`;
+document.title = `Chat Mark el Gamed  | ${room}`;
 
 // Join Chat Room
 socket.emit('joinRoom', { username, room });
