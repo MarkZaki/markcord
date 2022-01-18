@@ -19,7 +19,7 @@ const io = socketio(server);
 // Set static Folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-const botName = '<spans style="color: red">MarkCord-Bot</span>';
+const botName = '<spans style="color: red">Sausan The Bot</span>';
 
 // run when client connects
 io.on('connection', socket => {
@@ -37,7 +37,7 @@ io.on('connection', socket => {
 		socket.join(user.room);
 
 		// Welcome to the current user
-		socket.emit('message', formatMessage(botName, 'Welcome to MarkCord'));
+		socket.emit('message', formatMessage(botName, 'Welcome to Chat Mark el gamed Gdn lel 7alat el sa3ba zai eli enta fiha delwa2ti '));
 
 		// Broadcast when user connects
 		socket.broadcast
